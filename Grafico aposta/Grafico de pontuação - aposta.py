@@ -5,7 +5,7 @@ plt.title("Pontuação Acumulada da Aposta")
 plt.xlabel("Data")
 plt.ylabel("Pontos")
 
-pontosa = open("pontuacao_aposta_alisson.csv").readlines()
+pontosa = open("Grafico aposta/pontuacao_aposta_alisson.csv").readlines()
 #Data
 xa = []
 #Pontos
@@ -23,7 +23,7 @@ for j in ya:
     somaa += j
     acuma.append(somaa)
 
-pontosj = open("pontuacao_aposta_junior.csv").readlines()
+pontosj = open("Grafico aposta/pontuacao_aposta_junior.csv").readlines()
 #Data
 xj = []
 #Pontos
@@ -41,7 +41,7 @@ for j in yj:
     somaj += j
     acumj.append(somaj)
 
-pontosc = open("pontuacao_aposta_cleiton.csv").readlines()
+pontosc = open("Grafico aposta/pontuacao_aposta_cleiton.csv").readlines()
 #Data
 xc = []
 #Pontos
@@ -59,7 +59,7 @@ for j in yc:
     somac += j
     acumc.append(somac)
 
-pontos = open("pontuacao_aposta_davy.csv").readlines()
+pontos = open("Grafico aposta/pontuacao_aposta_davy.csv").readlines()
 #Data
 x = []
 #Pontos
@@ -81,19 +81,19 @@ for j in y:
 '''
 #Pontuação diaria
 plt.scatter(x, y, marker = "^")
-plt.plot(x, y, label = "Davy", linestyle = "--")
+plt.plot(x, y, label = "Davy", linestyle = "-")
 
 plt.scatter(xa, ya, marker = "*")
-plt.plot(xa, ya, label = "Alisson", linestyle = "--")
+plt.plot(xa, ya, label = "Alisson", linestyle = "-")
 
 plt.scatter(xj, yj, marker = "^")
-plt.plot(xj, yj, label = "Junior", linestyle = "--")
+plt.plot(xj, yj, label = "Junior", linestyle = "-")
 
 plt.scatter(xc, yc, color = "black")
-plt.plot(xc, yc, label = "Cleiton", linestyle = "--", color = "black")
+plt.plot(xc, yc, label = "Cleiton", linestyle = "-", color = "black")
 plt.legend()
-'''
 
+'''
 #Pontuação Acumulada
 plt.scatter(x, acum, marker = "^")
 plt.plot(x, acum, label = "Davy", linestyle = "--")
