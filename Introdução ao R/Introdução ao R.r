@@ -1,4 +1,4 @@
-dados = read.csv("populacao-brasileira (1).csv", header=TRUE, sep=";")
+dados = read.csv("Introdução ao R/populacao-brasileira (1).csv", header=TRUE, sep=";")
 
 #Crescimento da População
 plot(dados$ano, dados$population, main = "População brasileira", xlab = "Ano", ylab = "População")
